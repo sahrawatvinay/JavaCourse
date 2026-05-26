@@ -12,5 +12,9 @@ public class Hello {
         char c = 'x';
 
         boolean bl = false;
+
+        //literals : fixed value written directly in code
+        int a = 10;      // 10 is a literal
+        String s = "Hi"; // "Hi" is a literal
     }
 }
