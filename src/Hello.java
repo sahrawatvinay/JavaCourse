@@ -1,20 +1,30 @@
 public class Hello {
     static void main() {
         //Primitive data types
-        int num1 = 100;
+        int num = 100;
         byte by = 127; //max range
         short sh = 515;
-        long lg = 9576746;
+        long lg = 9576746L;
 
-        float fl = 50.1f; //always f suffix at end
-        double dbl = 100.8;
+        float price = 50.1f; //always f suffix at end
+        double amount = 100.8;
 
-        char c = 'x';
+        char letter = 'x';
 
-        boolean bl = false;
+        boolean isActive = false;
 
         //literals : fixed value written directly in code
         int a = 10;      // 10 is a literal
-        String s = "Hi"; // "Hi" is a literal
+        String msg = "Hi"; // "Hi" is a literal
+
+        // implicit conversion: small to big
+        int x = 55;
+        long y = x;
+        System.out.println(x + " -- " + y);
+
+        // explicit conversion: big to small, we have to cast it
+        float temp = 7.84f;
+        int value = (int)temp;
+        System.out.println(temp + " -- " + value);
     }
 }
