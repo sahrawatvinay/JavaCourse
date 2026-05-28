@@ -1,5 +1,5 @@
 public class Hello {
-    static void main() {
+    public static void main(String[] args) {
         //Primitive data types
         int num = 100;
         byte by = 127; //max range
@@ -26,5 +26,7 @@ public class Hello {
         float temp = 7.84f;
         int value = (int)temp;
         System.out.println(temp + " -- " + value);
+
+        System.out.println( temp > 8 ? "true" : "false");
     }
 }
