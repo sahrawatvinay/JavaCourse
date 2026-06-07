@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class JavaConcept {
+public class ArraysConcept {
     public static void main(String[] args) {
         int[] arr = new int[5];
         int[] arr1 = new int[]{1, 2, 3, 4, 5};
