@@ -1,6 +1,11 @@
 class Human {
     String name;
     int age;
+    static boolean isAlive;
+
+    static {
+        isAlive = true;
+    }
 
     public Human() {
         this.name = "Vinay";
@@ -35,5 +40,6 @@ public class ClassConcept {
         Human h2 = new Human("Deepak",32);
         System.out.println(h1.getName() + ":" + h1.getAge());
         System.out.println(h2.getName() + ":" + h2.getAge());
+        System.out.println(Human.isAlive);
     }
 }
