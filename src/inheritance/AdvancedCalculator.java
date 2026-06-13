@@ -1,6 +1,6 @@
 package inheritance;
 
-public class AdvancedCalculator extends BasicCalculator{
+public class AdvancedCalculator{
     public int mult(int a, int b) {
         return a * b;
     }
