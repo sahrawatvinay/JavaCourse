@@ -1,5 +1,7 @@
 package quiz;
 
+import java.util.Scanner;
+
 public class QuestionsService {
     Question[] questions = new Question[5];
 
@@ -11,9 +13,20 @@ public class QuestionsService {
         questions[4] = new Question(5, "What name?", "Ram", "Shyam",  "Gopal", "David", "Ram");
     }
 
-    public void displayQuestions(){
-        for(Question q : questions){
-            System.out.println(q.toString());
+    public void startQuiz(){
+        int score = 0;
+        for(int i=0; i< questions.length; i++){
+            System.out.print("Ques " + i + " " + questions[i].question + " ?");
+            System.out.println("a." + questions[i].opt1);
+            System.out.println("b." + questions[i].opt2);
+            System.out.println("c." + questions[i].opt3);
+            System.out.println("d." + questions[i].opt4);
+            Scanner sc = new Scanner(System.in);
+            String inp = sc.nextLine();
+            if(inp.equals(questions[i].ans)){
+                score++;
+            }
         }
+        System.out.println("You scored : " + score);
     }
 }
